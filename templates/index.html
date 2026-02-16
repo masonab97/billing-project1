@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rate Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rate Calculator</h1>
+
+        <form method="POST">
+            <input type="text" name="units" placeholder="Enter units">
+            <button type="submit">Calculate</button>
+        </form>
+
+        <p>{{ result }}</p>
+    </div>
+</body>
+</html>
